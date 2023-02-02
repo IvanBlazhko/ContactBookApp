@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ContactBookApp/static/css/main.bc862275.css",
-    "main.js": "/ContactBookApp/static/js/main.e9f04a39.js",
+    "main.js": "/ContactBookApp/static/js/main.d95e3a51.js",
     "static/media/Vectors.png": "/ContactBookApp/static/media/Vectors.4e9823da3bc93c5164a0.png",
     "index.html": "/ContactBookApp/index.html",
     "main.bc862275.css.map": "/ContactBookApp/static/css/main.bc862275.css.map",
-    "main.e9f04a39.js.map": "/ContactBookApp/static/js/main.e9f04a39.js.map"
+    "main.d95e3a51.js.map": "/ContactBookApp/static/js/main.d95e3a51.js.map"
   },
   "entrypoints": [
     "static/css/main.bc862275.css",
-    "static/js/main.e9f04a39.js"
+    "static/js/main.d95e3a51.js"
   ]
 }
