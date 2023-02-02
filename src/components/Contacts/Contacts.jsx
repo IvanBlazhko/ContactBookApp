@@ -41,7 +41,7 @@ export const PhonebookContacts = () => {
             <MoonLoader color="#fff" size={100} />
           </div>
         )}
-        {queryContact?.length === 0 && (
+        {queryContact?.length === 0 ? (
           <div className={Style.contact__start}>
             The contact book is empty... To get started, add an entry to the
             contact book!
@@ -49,18 +49,21 @@ export const PhonebookContacts = () => {
               <img src={picture} alt="Start img" />
             </div>
           </div>
-        )}
-        {visibleContacts?.length === 0 ? (
-          <div className={Style.contact__start}>
-            Contact with this name does not exist !
-            <div className={Style.contact__picture}>
-              <img src={picture} alt="Start img" />
-            </div>
-          </div>
         ) : (
-          visibleContacts.map(({ name, id, number }) => (
-            <ContactsItem name={name} key={id} id={id} phone={number} />
-          ))
+          <>
+            {visibleContacts?.length === 0 ? (
+              <div className={Style.contact__start}>
+                Contact with this name does not exist !
+                <div className={Style.contact__picture}>
+                  <img src={picture} alt="Start img" />
+                </div>
+              </div>
+            ) : (
+              visibleContacts.map(({ name, id, number }) => (
+                <ContactsItem name={name} key={id} id={id} phone={number} />
+              ))
+            )}
+          </>
         )}
       </div>
     </div>
