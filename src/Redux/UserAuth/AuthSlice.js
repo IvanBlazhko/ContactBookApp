@@ -63,12 +63,12 @@ export const authSlice = createSlice({
       .addCase(refreshUser.pending, state => {
         state.error = null;
       })
+      .addCase(refreshUser.rejected, (state, action) => {
+        state.error = action.payload;
+      })
       .addCase(refreshUser.fulfilled, (state, action) => {
         state.user = action.payload;
         state.isLoggedIn = true;
-      })
-      .addCase(refreshUser.rejected, (state, action) => {
-        state.error = action.payload;
       });
   },
 });
