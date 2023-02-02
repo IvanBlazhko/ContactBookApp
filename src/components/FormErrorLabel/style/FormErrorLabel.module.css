@@ -1,0 +1,9 @@
+.error__label {
+  margin-bottom: 5px;
+  margin-left: 5px;
+  display: block;
+  color: red;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1;
+}

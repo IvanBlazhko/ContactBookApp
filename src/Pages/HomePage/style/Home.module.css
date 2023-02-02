@@ -1,0 +1,24 @@
+.home__body {
+  width: 100vw;
+  height: 100vh;
+  padding: 40px;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+.home__form {
+  flex: 0 0 50%;
+}
+.home__content {
+  flex: 0 0 50%;
+}
+.form__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.2;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+

@@ -1,0 +1,21 @@
+.form__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 1.2;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 40px;
+}
+.form__subtitle {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 36px;
+}
+.form__body {
+  padding-bottom: 150px;
+}

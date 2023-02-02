@@ -1,0 +1,40 @@
+.item__contact {
+  display: flex;
+  color: white;
+}
+.item__name {
+  flex: 1 1 50%;
+  margin-bottom: 10px;
+}
+.item__phone {
+  flex: 1 1 50%;
+  margin-bottom: 10px;
+}
+.contacts__body {
+  height: 500px;
+  overflow: scroll;
+  position: relative;
+  z-index: 100;
+}
+.contacts__body::-webkit-scrollbar {
+  width: 0;
+}
+.contact__spinner {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.contact__remove_btn {
+  width: 70px;
+}
+.contact__start {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  width: 500px;
+}
+.contact__picture {
+  margin-top: 20px;
+}
