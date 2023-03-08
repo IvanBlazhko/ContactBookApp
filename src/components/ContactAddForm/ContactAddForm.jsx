@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 
 import { useForm } from 'react-hook-form';
+import { useAuth } from '../../Hooks/useAuth';
 import { toast } from 'react-toastify';
 
 import {
@@ -11,7 +12,6 @@ import {
 import Style from './style/ContactForm.module.css';
 
 import FormErrorLabel from '../FormErrorLabel/FormErrorLabel';
-import { useAuth } from '../../Hooks/useAuth';
 
 const ContactAddForm = () => {
   const { token } = useAuth();

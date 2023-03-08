@@ -1,9 +1,11 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import { useAuth } from '../../Hooks/useAuth';
 
 import { getFilter } from '../../Redux/ContactsSlices/selectors';
 import { toast } from 'react-toastify';
 
+import { useGetContactsQuery } from '../../Redux/ContactsSlices/ContactSlice';
 import { getVisibleContacts } from './getVisibleContacts';
 import { ContactsItem } from './ContactsItem';
 
@@ -11,8 +13,6 @@ import MoonLoader from 'react-spinners/ClipLoader';
 
 import Style from './style/Contacts.module.css';
 import picture from './img/startPicture.png';
-import { useGetContactsQuery } from '../../Redux/ContactsSlices/ContactSlice';
-import { useAuth } from '../../Hooks/useAuth';
 
 export const PhonebookContacts = () => {
   const { token } = useAuth();

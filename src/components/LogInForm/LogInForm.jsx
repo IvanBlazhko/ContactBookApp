@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
+import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 
 import Style from './style/LogInForm.module.css';
